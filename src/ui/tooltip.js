@@ -18,7 +18,6 @@ class Tooltip{
             tip.classList.remove('active');
         });
     }
-
 }
 
 export { Tooltip as default };

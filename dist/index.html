@@ -7,14 +7,79 @@
   <style>
     body{ font-size: 1.5em; }
     .container{ margin: 40px; margin-top: 60px; }
+    button{
+      width: 200px;
+      background: #eee;
+      padding: 10px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Tooltip -->
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
      Et fuga vero ipsa ad impedit modi aut esse <span class="tooltip" data-message="I'm a tooltip!">distinctio delectus omnis soluta,</span>
      maxime deserunt quae pariatur illo atque? Maiores, sapiente nostrum.</p>
+     <!-- Tooltip END -->
+     <h2>Services</h2>
+     <!-- Dropdowns -->
+     <div class="dropdown">
+       <div class="trigger">First dropdown</div>
+       <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Vero corrupti quae velit placeat similique officiis quidem repellat molestias at consectetur saepe doloribus ratione non ut,
+          amet tempore possimus molestiae. Eum?
+        </p>
+      </div>
+     </div>
+     <div class="dropdown">
+        <div class="trigger">Second dropdown</div>
+        <div class="content">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Vero corrupti quae velit placeat similique officiis quidem repellat molestias at consectetur saepe doloribus ratione non ut,
+            amet tempore possimus molestiae. Eum?
+          </p>
+        </div>
+      </div>
+      <!-- Dropdowns END -->
+      <h2>More information</h2>
+      <!-- Tabs -->
+      <div class="tabs">
+        <ul>
+          <li class="trigger active" data-target="#about">About</li>
+          <li class="trigger" data-target="#delivery">Delivery info</li>
+          <li class="trigger" data-target="#returns">Returns info</li>
+        </ul>
+        <div id="about" class="content active">
+          <h3>About</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati error, 
+          possimus quibusdam natus recusandae cupiditate facilis impedit, consectetur nisi itaque ab voluptas laborum amet ducimus molestiae vitae, rerum repellendus nostrum!</p>
+        </div>
+        <div id="delivery" class="content">
+          <h3>Delivery</h3>
+          <p>Blanditiis, tenetur provident! Neque veniam enim porro iusto exercitationem tempore architecto.
+          Nisi distinctio repellat labore soluta, est nesciunt officia voluptas, cumque harum veritatis modi ex. Earum a illo itaque eum!</p>
+        </div>
+        <div id="returns" class="content">
+          <h3>Returns</h3>
+          <p>Labore, at dolores incidunt quaerat vero voluptates ad expedita iusto unde distinctio recusandae temporibus
+          dolor eos fugiat ab quis eius id officia esse quod pariatur cupiditate? Quod labore fugiat rerum.</p>
+        </div>
+      </div>
+      <!-- Tabs END -->
+      <!-- Snackbar trigger -->
+      <div>
+        <button class="snackbar-trigger">click me</button>
+      </div>
+      <!-- Snackbar trigger END -->
   </div>
+  
 
 
   <script src="assets/bundle.js"></script>
